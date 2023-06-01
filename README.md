@@ -35,3 +35,17 @@
 ![Wireframe](docs/readme/images/wireframe2.png)
 </details>
 <br>
+
+### Color Scheme
+<details><summary>Click to open</summary>
+
+![Color scheme](docs/readme/images/color-scheme.png)
+</details>
+<br>
+
+### Typography
+<details><summary>Click to open</summary>
+
+![typography](docs/readme/images/typography.png)
+</details>
+<br>
