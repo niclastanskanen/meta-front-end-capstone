@@ -2,6 +2,8 @@ import React from 'react';
 
 import logo from '../assets/logo_big.webp';
 
+import '../components/Footer.css';
+
 const Footer = () => {
   return (
     <footer aria-label="Footer" className="">
