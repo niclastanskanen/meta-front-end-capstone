@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import image from '../../assets/restaurantfood.jpg'
 import './Hero.css'
@@ -13,7 +14,11 @@ const Hero = () => {
               <h3 className="subHeading">Chicago</h3>
             </div>
             <p>We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-            <button className="primaryBtn" text="Reserve a Table" to="/booking">Reserve a Table</button>
+            <button className="primaryBtn" text="Reserve a Table">
+              <Link to="/booking">
+                Reserve a Table
+              </Link>
+            </button>
           </div>
         </div>
         <div aria-label="Image Container" className="imgContainer">
