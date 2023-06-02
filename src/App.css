@@ -198,13 +198,9 @@ section {
 }
 
 .bookingSection {
-    margin: 0 auto 5rem auto;
-    padding-inline: 1rem;
-}
-
-.bookingSection h2 {
-    text-align: center;
-    margin-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* <==========================================/ User Booking \==========================================> */
