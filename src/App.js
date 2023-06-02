@@ -6,6 +6,7 @@ import BookingPage from './pages/BookingPage';
 import Header from './components/Header';
 import './App.css';
 import './variables.css';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/" element={<Homepage />} />
         <Route path="/booking" element={<BookingPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

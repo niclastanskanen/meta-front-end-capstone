@@ -13,7 +13,6 @@ const Main = () => {
       <Specials />
       <Reviews />
       <About />
-      <Footer />
     </main>
   );
 };
