@@ -1,3 +1,54 @@
+.review {
+    background-color: #faf3f2;
+    border: 1px solid rgb(54, 54, 54, 0.25);
+    border-radius: 1rem;
+    padding: 1.5rem 1.125rem 1.125rem 1.125rem;
+    max-width: 197px;
+    box-shadow: var(--mainShadow);
+    transition: 0.32s ease-out;
+}
+
+.starIcon {
+    color: var(--pYellow);
+}
+
+.review:hover {
+    transform: scale(1.1);
+}
+
+.review>div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.625rem;
+}
+
+.review>div:first-child .imgContainer {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 2rem;
+    height: 2rem;
+}
+
+.review>div:first-child div:last-child p {
+    font-size: var(--pSm);
+    font-weight: 600;
+    color: var(--bH);
+}
+
+.review>div:first-child div:last-child small {
+    font-size: var(--pExSm);
+    font-weight: 500;
+    color: var(--bP);
+    opacity: 0.9;
+}
+
+.review>p {
+    font-size: var(--pSm);
+    color: var(--bP);
+    opacity: 0.9;
+}
+
 .testimonialsSection {
     background-color: var(--sSeashell);
     padding-bottom: 190px;

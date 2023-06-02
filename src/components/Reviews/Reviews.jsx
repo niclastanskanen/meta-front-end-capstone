@@ -6,6 +6,8 @@ import profile2 from '../../assets/profile2.jpeg'
 import profile3 from '../../assets/profile3.jpeg'
 import profile4 from '../../assets/profile4.jpeg'
 
+import './Reviews.css'
+
 const Reviews = () => {
   return (
     <section aria-label="Reviews Section" className="testimonialsSection twelveColGrid">

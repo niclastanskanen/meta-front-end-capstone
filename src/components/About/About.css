@@ -1,0 +1,109 @@
+/* About Section */
+.aboutSection {
+    position: relative;
+}
+
+.aboutSection>div:first-child {
+    grid-column: 3 / span 5;
+    margin-right: calc(65px - 20px);
+}
+
+.aboutSection>div:first-child .titleContainer h2 {
+    font-size: var(--mainH);
+    color: var(--pGreen);
+}
+
+.aboutSection>div:first-child .titleContainer .subHeading {
+    color: var(--sSalmon);
+}
+
+.aboutSection>div:first-child p {
+    font-size: var(--pMd);
+    color: var(--bP);
+    opacity: 0.9;
+}
+
+.aboutSection>div:last-child {
+    grid-column: 8 / span 5;
+    display: flex;
+    justify-content: center;
+    height: 447px;
+}
+
+.aboutSection>div:last-child .imgContainer {
+    width: 272px;
+    height: 338px;
+}
+
+.aboutSection>div:last-child .imgContainer:first-child {
+    position: relative;
+    top: 109px;
+    border-radius: 1rem;
+    transition: 0.38s ease-out;
+}
+
+.aboutSection>div:last-child .imgContainer:first-child:hover {
+    z-index: 1;
+    transform: rotate(5deg) scale(1.1);
+}
+
+.aboutSection>div:last-child .imgContainer:last-child {
+    position: relative;
+    right: 97px;
+    border-radius: 1rem;
+    transition: 0.38s ease;
+}
+
+.aboutSection>div:last-child .imgContainer:last-child:hover {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+.aboutSection>div:last-child .imgContainer img {
+    border-radius: 1rem;
+    box-shadow: var(--mainShadow);
+}
+
+@media screen and (max-width: 1620px) {
+    .aboutSection>div:first-child {
+        grid-column: 2 / span 5;
+    }
+
+    .aboutSection>div:last-child {
+        grid-column: 7 / span 6;
+    }
+}
+
+@media screen and (max-width: 1296px) {
+    .aboutSection>div:first-child {
+        grid-column: 1 / span 6;
+    }
+
+    .aboutSection>div:last-child {
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 989px) {
+    .aboutSection>div:first-child {
+        grid-column: span 12;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .aboutSection>div:last-child {
+        grid-column: span 12;
+        position: relative;
+        left: 2rem;
+    }
+
+    .aboutSection>div:last-child .imgContainer {
+        width: 375px;
+        height: 338px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .aboutSection>div:last-child {
+        display: none;
+    }
+}
