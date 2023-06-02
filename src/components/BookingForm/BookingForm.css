@@ -1,0 +1,100 @@
+.bookingForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 500px;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid var(--pGreen);
+    border-radius: 1rem;
+    box-shadow: var(--mainShadow);
+}
+
+.bookingForm>div:nth-child(1) {
+    display: flex;
+    gap: 1rem;
+}
+
+.bookingForm>div:nth-child(1) .firstNameContainer input,
+.bookingForm>div:nth-child(1) .lastNameContainer input {
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.bookingForm .container:not(.firstNameContainer, .lastNameContainer) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bookingForm .container label {
+    font-size: 26px;
+    color: var(--pGreen);
+}
+
+.bookingForm .container input,
+.bookingForm .container select {
+    background-color: var(--highlight);
+    color: var(--pGreen);
+    border: 1px solid rgb(73, 94, 87, 0.5);
+    border-radius: 6px;
+    min-height: 48px;
+    transition: ease 0.32s;
+}
+
+.bookingForm .container input:focus {
+    border: 1px solid var(--pGreen);
+}
+
+.bookingForm .container select {
+    background: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 96 960 960" width="32" fill="%23495e57"><path d="M359.385 785.538q-6.461-7.692-6.769-16.615-.308-8.923 6.769-16l177.539-177.538L358.77 396.846q-6.462-6.077-6.154-16.115.308-10.038 6.769-16.5 7.692-7.692 16.307-7.384 8.615.308 15.692 7.384l190.538 190.923q4.615 4.615 6.808 9.423 2.192 4.808 2.192 10.808 0 5.615-2.192 10.615-2.193 5-6.808 9.615L392 785.538q-7.077 7.077-16 6.577t-16.615-6.577Z"/></svg>') no-repeat;
+    background-position: calc(100% - 7.3px) center;
+    background-color: var(--highlight);
+    appearance: none;
+}
+
+.bookingForm .container select:focus {
+    background: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 96 960 960" width="32" fill="%23495e57"><path d="M480 684.768q-6.026 0-11.5-2.102-5.474-2.103-10.423-7.051L271.334 488.871q-6.949-6.948-6.641-17.794.308-10.846 7.256-17.794 8.026-8.026 17.897-7.41 9.872.615 17.487 7.82L480 626.36l172.872-172.872q6.949-6.949 17.666-7.385 10.718-.436 17.923 7.59 8.026 7.205 7.282 17.692-.744 10.486-7.692 18.102L501.923 675.615q-4.949 4.948-10.231 7.051-5.282 2.102-11.692 2.102Z"/></svg>') no-repeat;
+    background-position: calc(100% - 7.3px) center;
+    background-color: var(--highlight);
+}
+
+/* To get rid of the default number input arrows */
+/* Firefox */
+.bookingForm .guestsContainer input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+/* Chrome */
+.bookingForm .guestsContainer input::-webkit-inner-spin-button,
+.bookingForm .guestsContainer input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.bookingForm .required,
+.bookingForm small {
+    color: red;
+}
+
+.bookingForm button {
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 515px) {
+
+    .bookingForm>div:nth-child(1),
+    .bookingForm>div:nth-child(1) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bookingForm>div:nth-child(1) .firstNameContainer,
+    .bookingForm>div:nth-child(1) .lastNameContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+}

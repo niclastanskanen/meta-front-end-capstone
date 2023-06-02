@@ -1,0 +1,76 @@
+.heroSection {
+    position: relative;
+    background-color: var(--pGreen);
+    padding-block: 1.5rem;
+    height: 406px;
+}
+
+.heroSection>div:not(.imgContainer) {
+    grid-column: 2 / span 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heroSection>div:not(.imgContainer) .content {
+    max-width: 310px;
+}
+
+.heroSection>div:not(.imgContainer) .content .titleContainer h1 {
+    font-size: var(--mainH);
+    color: var(--pYellow);
+}
+
+.heroSection>div:not(.imgContainer) .content .titleContainer .subHeading {
+    color: var(--wPH);
+}
+
+.heroSection>div:not(.imgContainer) .content p {
+    font-size: var(--pMd);
+    font-weight: 500;
+    color: var(--wPH);
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+.heroSection .imgContainer {
+    grid-column: 7 / span 5;
+    justify-self: center;
+    position: absolute;
+    top: 24px;
+    width: 374px;
+    height: 426px;
+}
+
+.heroSection .imgContainer img {
+    border-radius: 1rem;
+    box-shadow: var(--mainShadow);
+}
+
+@media screen and (max-width: 1024px) {
+    .heroSection>div:not(.imgContainer) {
+        grid-column: 1 / span 6;
+    }
+
+    .heroSection .imgContainer {
+        grid-column: 7 / span 6;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .heroSection>div:not(.imgContainer) {
+        grid-column: 2 / span 11;
+        align-items: flex-start;
+    }
+
+    .heroSection .imgContainer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 398px) {
+    .heroSection>div:not(.imgContainer) {
+        grid-column: span 12;
+    }
+}

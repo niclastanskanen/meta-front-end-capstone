@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiFillStar } from 'react-icons/ai';
 
-import image from '../assets/restaurantfood.jpg'
+
 import salad from '../assets/greek_salad.jpg'
 import bruchetta from '../assets/bruchetta.svg'
 import dish from '../assets/Dish_icon.svg'
@@ -12,27 +12,12 @@ import profile3 from '../assets/profile3.jpeg'
 import profile4 from '../assets/profile4.jpeg'
 import chefs from '../assets/Mario_Adrian_B.jpg'
 import restaurant from '../assets/restaurant.jpg'
+import Hero from './Hero/Hero';
 
 const Main = () => {
   return (
     <main>
-      <section aria-label="Hero Section" className="heroSection twelveColGrid">
-        <div>
-          <div aria-label="Spotlight" className="content">
-            <div className="titleContainer">
-              <h1>Little Lemon</h1>
-              <h3 className="subHeading">Chicago</h3>
-            </div>
-            <p>We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-            <button className="primaryBtn" text="Reserve a Table" to="/booking">Reserve a Table</button>
-          </div>
-        </div>
-        <div aria-label="Image Container" className="imgContainer">
-          <span>
-            <img src={image} alt="Restaurant Food" height={340} />
-          </span>
-        </div>
-      </section>
+      <Hero />
 
       <section aria-label="Specials Section" className="specialsSection twelveColGrid">
         <span aria-label="Title and Button">
