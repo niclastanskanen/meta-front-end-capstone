@@ -1,0 +1,25 @@
+:root {
+    --bgColour: #f2f2f2;
+    --pGreen: #495e57;
+    --pYellow: #f4ce14;
+    --pYellowHover: #f7dc57;
+    --sSalmon: #ee9972;
+    --sPeach: #fbdabb;
+    --sSeashell: #fdf4ee;
+    --highlight: #edefee;
+    --bH: #212121;
+    --bP: #333;
+    --wPH: #f4f4f4;
+    --hFont: "Markazi Text", serif;
+    --pFont: "Karla", sans-serif;
+    --mainH: 64px;
+    --subH: 40px;
+    --mdH: 36px;
+    --smH: 24px;
+    --smExH: 20px;
+    --pMd: 18px;
+    --pSm: 14px;
+    --pExSm: 12px;
+    --mainShadow: 4px 5px 6px rgba(0, 0, 0, 0.25);
+    --hoverShadow: 4px 5px 10px rgba(0, 0, 0, 0.2);
+  }
