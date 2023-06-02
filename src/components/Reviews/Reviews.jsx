@@ -11,7 +11,7 @@ import './Reviews.css'
 const Reviews = () => {
   return (
     <section aria-label="Reviews Section" className="testimonialsSection twelveColGrid">
-        <h3>What do our customers think?</h3>
+        <h3>Glowing Testimonies of Delighted Customers</h3>
         <div className="reviewsContainer">
           <article aria-label="Review" className="review">
             <div>

@@ -32,9 +32,9 @@ const Footer = () => {
             <div aria-label="Social Media Info">
               <h4>Socials</h4>
               <ul aria-label="Social Media List">
-                <li><a href="/">Facebook</a></li>
-                <li><a href="/">Twitter</a></li>
-                <li><a href="/">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a></li>
+                <li><a href="https://www.twitter.com" target="_blank" rel="noreferrer">Twitter</a></li>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
               </ul>
             </div>
           </div>
