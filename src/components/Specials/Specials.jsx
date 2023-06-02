@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import salad from '../../assets/greek_salad.jpg'
 import bruchetta from '../../assets/bruchetta.svg'
@@ -14,7 +15,11 @@ const Specials = () => {
           <h2>This Week's Specials!</h2>
         </span>
         <span aria-label="Title and Button">
-          <button className="primaryBtn" text="Online Menu">Online Menu</button>
+          <button className="primaryBtn" text="Online Menu">
+            <Link to='/menu'>
+              Online Menu
+            </Link>
+          </button>
         </span>
         <div aria-label="Specials List">
           <article aria-label="Food Card" className="card">
