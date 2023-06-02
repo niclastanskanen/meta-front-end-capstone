@@ -18,12 +18,12 @@ const About = () => {
           </p>
         </div>
           <div aria-label="Image Gallery">
-            <div class="imgContainer">
+            <div className="imgContainer">
               <span>
                 <img src={restaurant} alt="Restaurant Interior" />
               </span>
             </div>
-            <div class="imgContainer">
+            <div className="imgContainer">
               <span>
                 <img src={chefs} alt="Mario and Adrian" />
               </span>

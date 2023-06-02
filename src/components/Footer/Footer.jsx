@@ -5,9 +5,9 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <footer aria-label="Footer" className="">
+    <footer aria-label="Footer">
       <div>
-        <img src={logo} alt="Little Lemon Logo" className="" height={150} />
+        <img src={logo} alt="Little Lemon Logo" height={150} />
           <div>
             <div aria-label="Site Navigation">
               <h4>Navigation</h4>
@@ -23,10 +23,10 @@ const Footer = () => {
             <div aria-label="Contact Info">
               <h4>Contact</h4>
               <ul aria-label="Contact Info List">
-                <li><p>1536 W ADAMS ST</p></li>
-                <li><p>CHICAGO IL 60607-2455</p></li>
+                <li><p><a href="https://www.google.com/maps/search/1536+W+ADAMS+ST" target="_blank" rel='noreferrer'>1536 W ADAMS ST</a></p></li>
+                <li><p><a href="https://www.google.com/maps/search/CHICAGO+IL+60607-2455" target="_blank" rel='noreferrer'>CHICAGO IL 60607-2455</a></p></li>
                 <li><a href='tel: +17731234567'>(773)123-4567</a></li>
-                <li><a href="/">Email Us</a></li>
+                <li><a href="mailto:your-email@example.com">Email Us</a></li>
               </ul>
             </div>
             <div aria-label="Social Media Info">

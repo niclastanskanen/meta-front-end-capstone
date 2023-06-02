@@ -1,18 +1,21 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import Homepage from './pages/Homepage';
+import BookingPage from './pages/BookingPage';
 import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer/Footer';
 import './App.css';
 import './variables.css';
 
 const App = () => {
   return (
-    <>
+    <Router>
       <Header />
-      <Main />
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/booking" element={<BookingPage />} />
+      </Routes>
+    </Router>
   );
 };
 
