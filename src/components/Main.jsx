@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineStar } from 'react-icons/ai';
+import { AiFillStar } from 'react-icons/ai';
 
 import image from '../assets/restaurantfood.jpg'
 import salad from '../assets/greek_salad.jpg'
@@ -12,7 +12,6 @@ import profile3 from '../assets/profile3.jpeg'
 import profile4 from '../assets/profile4.jpeg'
 import chefs from '../assets/Mario_Adrian_B.jpg'
 import restaurant from '../assets/restaurant.jpg'
-
 
 const Main = () => {
   return (
@@ -29,27 +28,27 @@ const Main = () => {
           </div>
         </div>
         <div aria-label="Image Container" className="imgContainer">
-          <span className="lazy-load-image-background blur lazy-load-image-loaded" style={{ color: 'transparent', display: 'inline-block' }}>
+          <span>
             <img src={image} alt="Restaurant Food" height={340} />
           </span>
         </div>
       </section>
 
-      <section aria-label="Specials Section" class="specialsSection twelveColGrid">
+      <section aria-label="Specials Section" className="specialsSection twelveColGrid">
         <span aria-label="Title and Button">
           <h2>This Week's Specials!</h2>
         </span>
         <span aria-label="Title and Button">
-          <button class="primaryBtn" text="Online Menu">Online Menu</button>
+          <button className="primaryBtn" text="Online Menu">Online Menu</button>
         </span>
         <div aria-label="Specials List">
-          <article aria-label="Food Card" class="card">
-            <div aria-label="Card Image Container" class="imgContainer">
+          <article aria-label="Food Card" className="card">
+            <div aria-label="Card Image Container" className="imgContainer">
               <span>
                 <img src={salad} alt="Greek salad" />
               </span>
             </div>
-            <div aria-label="Card Content" class="cardContentContainer">
+            <div aria-label="Card Content" className="cardContentContainer">
               <div aria-label="Title and Price">
                 <h4>Greek salad</h4>
                 <p>$12.99</p>
@@ -63,13 +62,13 @@ const Main = () => {
               </div>
             </div>
           </article>
-          <article aria-label="Food Card" class="card">
-            <div aria-label="Card Image Container" class="imgContainer">
+          <article aria-label="Food Card" className="card">
+            <div aria-label="Card Image Container" className="imgContainer">
               <span>
                 <img src={bruchetta} alt="Bruschetta" />
               </span>
             </div>
-            <div aria-label="Card Content" class="cardContentContainer">
+            <div aria-label="Card Content" className="cardContentContainer">
               <div aria-label="Title and Price">
                 <h4>Bruschetta</h4>
                 <p>$5.99</p>
@@ -83,13 +82,13 @@ const Main = () => {
               </div>
             </div>
           </article>
-          <article aria-label="Food Card" class="card">
-            <div aria-label="Card Image Container" class="imgContainer">
+          <article aria-label="Food Card" className="card">
+            <div aria-label="Card Image Container" className="imgContainer">
               <span>
                 <img src={lemon} alt="Lemon Dessert" />
               </span>
             </div>
-              <div aria-label="Card Content" class="cardContentContainer">
+              <div aria-label="Card Content" className="cardContentContainer">
                 <div aria-label="Title and Price">
                   <h4>Lemon Dessert</h4>
                   <p>$4.99</p>
@@ -113,85 +112,85 @@ const Main = () => {
             <div>
               <div className="imgContainer">
                 <span>
-                  <img src={profile2} alt="Sara Lopez's Profile Pic" />
+                  <img src={profile2} alt="Emma Watson's Profile Pic" />
                 </span>
               </div>
               <div aria-label="Name and Username">
-                <p aria-label="Name">Sara Lopez</p>
-                <small>Sara72</small>
+                <p aria-label="Name">Emma Watson</p>
+                <small>emma.watson</small>
               </div>
             </div>
             <div aria-label="Rating">
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
             </div>
-            <p aria-label="Review Description">"Seriously cannot stop thinking about the Turkish Mac n' Cheese!!"</p>
+            <p aria-label="Review Description">"I had the pleasure of dining at Little Lemon and was blown away by the flavors! The Mediterranean dishes are a delightful fusion of traditional and modern cuisine. A must-visit for food enthusiasts!"</p>
           </article>
           <article aria-label="Review" className="review">
             <div>
               <div className="imgContainer">
                 <span>
-                  <img src={profile} alt="John Doucette's Profile Pic" />
+                  <img src={profile} alt="David Thompson's Profile Pic" />
                 </span>
               </div>
               <div aria-label="Name and Username">
-                <p aria-label="Name">John Doucette</p>
-                <small>Johnny_Utah</small>
+                <p aria-label="Name">David Thompson</p>
+                <small>david.thompson</small>
               </div>
             </div>
             <div aria-label="Rating">
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
             </div>
-            <p aria-label="Review Description">"We had such a great time celebrating my grandmother's birthday!"</p>
+            <p aria-label="Review Description"> "Little Lemon Chicago exceeded my expectations! The service was impeccable, and the attention to detail in every dish was remarkable. I can't wait to visit again and explore more of their menu."</p>
           </article>
           <article aria-label="Review" className="review">
             <div>
               <div className="imgContainer">
                 <span>
-                  <img src={profile3} alt="Jimmy Crickets's Profile Pic" />
+                  <img src={profile3} alt="Ethan Cooper's Profile Pic" />
                 </span>
               </div>
               <div aria-label="Name and Username">
-                <p aria-label="Name">Jimmy Crickets</p>
-                <small>crick_it</small>
+                <p aria-label="Name">Ethan Cooper</p>
+                <small>cooper.ethan</small>
               </div>
             </div>
             <div aria-label="Rating">
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
             </div>
-            <p aria-label="Review Description">"Such a chilled out atmosphere, love it!"</p>
+            <p aria-label="Review Description">"I'm a vegetarian, and Little Lemon offers an incredible selection of vegetarian options. The flavors were vibrant, and the presentation was stunning. A veggie lover's paradise!"</p>
           </article>
           <article aria-label="Review" className="review">
             <div>
               <div className="imgContainer">
                 <span>
-                  <img src={profile4} alt="Mia Maria's Profile Pic" />
+                  <img src={profile4} alt="Lily Turner's Profile Pic" />
                 </span>
               </div>
               <div aria-label="Name and Username">
-                <p aria-label="Name">Mia Maria</p>
-                <small>flowerTime</small>
+                <p aria-label="Name">Lily Turner</p>
+                <small>lily.turner</small>
               </div>
             </div>
             <div aria-label="Rating">
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
-              <span aria-label="Star Icon" className="material-symbols-rounded"><AiOutlineStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
+              <span aria-label="Star Icon" className="starIcon"><AiFillStar /></span>
             </div>
-            <p aria-label="Review Description">"Best Feta Salad in town. Flawless every time!"</p>
+            <p aria-label="Review Description">"Little Lemon Chicago is my go-to restaurant for a special occasion. The cozy atmosphere, attentive staff, and delectable food create an unforgettable dining experience. I highly recommend trying their signature dishes!"</p>
           </article>
         </div>
       </section>
@@ -206,18 +205,18 @@ const Main = () => {
             Little Lemon Chicago is a family-owned Mediterranean restaurant located in the heart of the city. The restaurant is run by brothers Mario and Adrian, who have always had a passion for cooking and serving delicious food. Growing up in a Mediterranean household, the brothers were exposed to traditional recipes from an early age, and they decided to bring those recipes to the masses with a modern twist. At Little Lemon, you can expect to find a menu full of classic dishes with a creative twist that makes them stand out from the rest. Whether you're looking for a quick lunch or a leisurely dinner, Little Lemon Chicago is the perfect place to indulge in a delicious meal in a cozy and welcoming atmosphere.
           </p>
         </div>
-        <div aria-label="Image Gallery">
-          <div className="imgContainer">
-            <span>
-              <img src={restaurant} alt="Restaurant Interior" />
-            </span>
+          <div aria-label="Image Gallery">
+            <div class="imgContainer">
+              <span>
+                <img src={restaurant} alt="Restaurant Interior" />
+              </span>
+            </div>
+            <div class="imgContainer">
+              <span>
+                <img src={chefs} alt="Mario and Adrian" />
+              </span>
+            </div>
           </div>
-          <div className="imgContainer">
-            <span>
-              <img src={chefs} alt="Mario and Adrian" />
-            </span>
-          </div>
-        </div>
       </section>
     </main>
   );
