@@ -157,52 +157,7 @@ section {
 
 
 
-/* Testimonials Section */
-.testimonialsSection {
-    background-color: var(--sSeashell);
-    padding-bottom: 190px;
-}
 
-.testimonialsSection h3 {
-    grid-column: span 12;
-    text-align: center;
-    margin: 121px 0 4rem 0;
-    height: fit-content;
-}
-
-.testimonialsSection .reviewsContainer {
-    grid-column: 3 / span 8;
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-}
-
-@media screen and (max-width: 1460px) {
-    .testimonialsSection .reviewsContainer {
-        grid-column: 2 / span 10;
-    }
-}
-
-@media screen and (max-width: 1190px) {
-    .testimonialsSection .reviewsContainer {
-        grid-column: span 12;
-    }
-}
-
-@media screen and (max-width: 907px) {
-    .testimonialsSection .reviewsContainer {
-        justify-content: center;
-        gap: 1.5rem 4rem;
-    }
-}
-
-@media screen and (max-width: 769px) {
-    .testimonialsSection .reviewsContainer {
-        justify-content: center;
-        gap: 1.5rem 2.5rem;
-    }
-}
 
 /* About Section */
 .aboutSection {
