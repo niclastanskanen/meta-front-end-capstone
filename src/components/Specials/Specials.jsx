@@ -5,6 +5,8 @@ import bruchetta from '../../assets/bruchetta.svg'
 import dish from '../../assets/Dish_icon.svg'
 import lemon from '../../assets/lemon_dessert.jpg'
 
+import './Specials.css'
+
 const Specials = () => {
   return (
     <section aria-label="Specials Section" className="specialsSection twelveColGrid">
