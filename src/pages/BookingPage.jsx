@@ -2,11 +2,11 @@ import { useState, useReducer } from "react"
 import BookingForm from "../components/BookingForm/BookingForm"
 import { fetchAPI, submitAPI } from "../api/api"
 import { useNavigate } from "react-router-dom";
- 
+
 export default function BookingPage() {
-    
+
   const [date, setDate] = useState(new Date())
- 
+
   function initializeTimes(date) {
     return fetchAPI(date)
     }
@@ -25,7 +25,7 @@ export default function BookingPage() {
       navigate("/confirmed");
     }
   }
-  
+
   function reducer(state, action) {
     let newState
     switch (action.type) {

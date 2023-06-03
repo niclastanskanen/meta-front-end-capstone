@@ -156,7 +156,6 @@ section {
 .card .cardContentContainer>p {
     color: var(--pGreen);
     min-height: 144px;
-    /* font-weight: 500; */
     margin-bottom: 1rem;
 }
 
@@ -169,7 +168,6 @@ section {
 .card .cardContentContainer div:nth-child(3) a {
     font-family: var(--pFont);
     font-weight: 600;
-    /* color: var(--pGreen); */
 }
 
 .card .cardContentContainer div:nth-child(3) img {
@@ -203,77 +201,19 @@ section {
     align-items: center;
 }
 
-/* <==========================================/ User Booking \==========================================> */
-
-.bookingDataContainer {
-    position: relative;
-    background-color: var(--highlight);
-    border: 3px solid var(--pGreen);
-    border-radius: 6px;
-    padding: 0.5rem 1rem 1rem 1rem;
-    margin: 4rem auto 0 auto;
-    max-width: 350px;
-    box-shadow: var(--mainShadow);
+.confirmedBooking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10rem;
+    gap: 2rem;
 }
 
-.bookingDataContainer h3 {
-    text-align: center;
-    border-bottom: 1px solid var(--pGreen);
-    margin-bottom: 0.5rem;
+.confirmedBooking h2 {
+    color: var(--pYellow);
 }
 
-.bookingDataContainer article {
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-}
-
-.bookingDataContainer article.addDivider:not(:nth-last-child(1)) {
-    border-bottom: 1px solid var(--pGreen);
-}
-
-.bookingDataContainer article h4 {
-    font-size: var(--smH);
-    text-align: center;
-}
-
-.bookingDataContainer article .content {
-    margin-left: 0.5rem;
-}
-
-.bookingDataContainer .content p {
-    font-size: var(--pMd);
-    font-weight: 500;
-    font-style: italic;
-    color: var(--bP);
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.bookingDataContainer .content p span {
-    font-size: var(--smExH);
-    font-weight: 600;
-    font-style: normal;
-    color: var(--pGreen);
-}
-
-.bookingDataContainer #cut1 {
-    position: absolute;
-    top: 0;
-    left: -3px;
-    width: 5%;
-    height: 48px;
-    /* border-left: 1px dashed var(--pGreen); */
-    border-bottom-right-radius: 2px;
-    background-color: var(--highlight);
-}
-
-.bookingDataContainer #cut2 {
-    position: absolute;
-    bottom: 0;
-    right: -3px;
-    width: 5%;
-    height: 48px;
-    /* border-right: 1px dashed var(--pGreen); */
-    border-bottom-right-radius: 2px;
-    background-color: var(--highlight);
+.confirmedLogo {
+    height: 200px;
 }
