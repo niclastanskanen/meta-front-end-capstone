@@ -5,13 +5,14 @@ import { useNavigate } from "react-router-dom";
 
 export default function BookingPage() {
 
+  // eslint-disable-next-line no-unused-vars
   const [date, setDate] = useState(new Date())
 
-  function initializeTimes(date) {
+  function initializeTimes() {
     return fetchAPI(date)
-    }
+  }
 
-  function updateTimes(date) {
+  function updateTimes() {
     const dateObj = new Date(date)
     return fetchAPI(dateObj)
   }
@@ -27,12 +28,12 @@ export default function BookingPage() {
   }
 
   function reducer(state, action) {
-    let newState
+    let newState;
     switch (action.type) {
       case 'UPDATE_TIMES':
-      const newDate = new Date(action.payload);
-      newState = updateTimes(newDate)
-      break;
+        const newDate = new Date(action.payload);
+        newState = updateTimes(newDate);
+        break;
 
       default:
         throw new Error()
@@ -40,8 +41,9 @@ export default function BookingPage() {
     return newState
   }
 
-  const [availableTimes, dispatch] = useReducer(reducer, initializeTimes(date))
-    return (
-        <BookingForm availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm}/>
-    )
-  }
+  const [availableTimes, dispatch] = useReducer(reducer, initializeTimes())
+
+  return (
+    <BookingForm availableTimes={availableTimes} dispatch={dispatch} submitForm={submitForm}/>
+  )
+}
